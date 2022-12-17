@@ -1,0 +1,47 @@
+/* to add text over image in div set the div position to relative and the text absolute */
+:root {
+    --light-blue: #387b7a;
+    --dark-blue:  #051821;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    border-bottom: 8px solid #f58800;
+}
+
+.header h1 {
+    font-size: 80px;
+    display: inline-block;
+}
+
+.header nav {
+    font-size: 30px;
+    float: right;
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.header nav ul li {
+    display:inline-block;
+    margin: 15px;
+    padding-top: 30px;
+}
+
+a {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
