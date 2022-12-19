@@ -1,27 +1,37 @@
 /* to add text over image in div set the div position to relative and the text absolute */
+/* fix hyper links
+fix colored dots?????
+consolidate pseudo elements ? */
 :root {
-    --light-blue: #387b7a;
-    --dark-blue:  #051821;
+    --purple: #7122fa;
+    --orange: rgb(255, 187, 0);
+    --pink:  #ff7dcb;
+    --black: #000000;
+    --green: rgb(39, 222, 39);
+    --blue: rgb(0, 195, 255);
+    --white: white;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: var(--black);
 }
 
 .header {
     padding-top: 30px;
     padding-bottom: 5px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--dark-blue);
-    color: var(--light-blue);
-    border-bottom: 8px solid #f58800;
+    background-color: var(--black);
+    color: var(--white);
+    border-bottom: 8px solid var(--purple);
 }
 
 .header h1 {
     font-size: 80px;
     display: inline-block;
+    margin-left: 20px;
 }
 
 .header nav {
@@ -41,7 +51,89 @@
 }
 
 a {
-    color: var(--light-blue);
+    color: var(--white);
     text-decoration: none;
 }
 
+.content {
+    width: 75%;
+    display: block;
+    margin-left: 20%;
+}
+
+.card {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding:50px;
+    height: 300px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+#about-me {
+    box-shadow: 0 0 10px 8px var(--blue)
+}
+#work {
+    box-shadow: 0 0 10px 8px var(--pink)
+}
+#contact-me {
+    box-shadow: 0 0 10px 8px var(--green)
+}
+#resume {
+    box-shadow: 0 0 10px 8px var(--orange)
+}
+
+section h2 {
+    padding: 10px;
+    position: absolute;
+    left: 20px;
+    color: var(--);
+    background-color: var(--black);
+    font-size: 50px;
+    box-shadow: 0 0 10px 8px var(--light-blue);
+}
+
+#header-am {
+    border-right: 6px solid var(--blue);
+
+}
+#header-work {
+    border-right: 6px solid var(--pink);
+}
+#header-contact {
+    border-right: 6px solid var(--green);
+}
+#header-resume {
+    border-right: 6px solid var(--orange);
+}
+section img {
+    max-height: 110%;
+    float: right;
+}
+/* nav bar pseduo elements */
+.blue:hover {
+    text-shadow: 5px 5px var(--blue);
+}
+.pink:hover {
+    text-shadow: 5px 5px var(--pink);
+}
+.green:hover {
+    text-shadow: 5px 5px var(--green);
+}
+.orange:hover {
+    text-shadow: 5px 5px var(--orange);
+}
+/* section pseudo element */
+#about-me:hover {
+    box-shadow: 0 0 10px 8px var(--purple);
+}
+#work:hover {
+    box-shadow: 0 0 10px 8px var(--purple);
+}
+#contact-me:hover {
+    box-shadow: 0 0 10px 8px var(--purple);
+}
+#resume:hover {
+    box-shadow: 0 0 10px 8px var(--purple);
+}
