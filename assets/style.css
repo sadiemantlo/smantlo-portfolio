@@ -64,18 +64,19 @@ a {
 .card {
     margin-top: 40px;
     margin-bottom: 20px;
-    padding:50px;
-    height: 300px;
+    padding: 35px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--dark-blue);
     color: var(--white);
 }
 
 #about-me {
-    box-shadow: 0 0 10px 8px var(--blue)
+    height: 300px;
+    font-size: 25px;
+    /* box-shadow: 0 0 10px 8px var(--blue) */
 }
 #work {
-    box-shadow: 0 0 10px 8px var(--pink)
+    height: 950px;
+    /* box-shadow: 0 0 10px 8px var(--pink) */
 }
 #contact-me {
     box-shadow: 0 0 10px 8px var(--green)
@@ -87,7 +88,7 @@ a {
 section h2 {
     padding: 10px;
     position: absolute;
-    left: 20px;
+    /* left: 20px; */
     color: var(--);
     background-color: var(--black);
     font-size: 50px;
@@ -95,22 +96,67 @@ section h2 {
 }
 
 #header-am {
+    height: 300px;
+    top: 200px;
+    left: 20px;
     border-right: 6px solid var(--blue);
 
 }
 #header-work {
+    height: 750px;
+    left: 37px;
     border-right: 6px solid var(--pink);
 }
-#header-contact {
+/* #header-contact {
     border-right: 6px solid var(--green);
 }
 #header-resume {
     border-right: 6px solid var(--orange);
-}
-section img {
+} */
+#me {
+    position: relative;
+    padding: 8px;
     max-height: 110%;
     float: right;
 }
+
+
+/* work section images */
+#ravebuddy-img {
+    border: 4px solid var(--pink);
+    display: flex;
+    position: absolute;
+    height: 400px;
+    width: 65%;
+}
+#RaveBuddy {
+    display: flex;
+    position: absolute;
+    bottom: -65px;
+    padding: 7px;
+    background-color: var(--pink);
+    font-size: 60px;
+}
+#clothes-img {
+    border: 4px solid var(--pink);
+    display: flex;
+    position: absolute;
+    bottom: -450px;
+    height: 300px;
+    width: 40%
+}
+#Clothes {
+    position: absolute;
+    bottom: -410px;
+    padding: 7px;
+    background-color: var(--pink);
+    font-size: 40px;
+}
+
+
+
+
+
 /* nav bar pseduo elements */
 .blue:hover {
     text-shadow: 5px 5px var(--blue);
@@ -128,12 +174,38 @@ section img {
 #about-me:hover {
     box-shadow: 0 0 10px 8px var(--purple);
 }
-#work:hover {
+/* #work:hover {
     box-shadow: 0 0 10px 8px var(--purple);
-}
+} */
 #contact-me:hover {
     box-shadow: 0 0 10px 8px var(--purple);
 }
 #resume:hover {
     box-shadow: 0 0 10px 8px var(--purple);
+}
+
+.footer {
+    padding: 20px ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    border-top: 8px solid var(--purple);
+    text-align: center;
+}
+.footer h3 {
+    font-size: 35px;
+}
+.footer ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.footer ul li {
+    display:inline-flex;
+    margin: 20px;
+    padding-top: 30px;
+    font-size: 25px;
+}
+#github:hover {
+    text-decoration: underline;
 }
