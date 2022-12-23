@@ -1,7 +1,3 @@
-/* to add text over image in div set the div position to relative and the text absolute */
-/* fix hyper links
-fix colored dots?????
-consolidate pseudo elements ? */
 :root {
     --purple: #7122fa;
     --orange: rgb(255, 187, 0);
@@ -55,6 +51,7 @@ a {
     text-decoration: none;
 }
 
+/* main content */
 .content {
     width: 75%;
     display: block;
@@ -68,51 +65,57 @@ a {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--white);
 }
-
-#about-me {
-    height: 300px;
-    font-size: 25px;
-    /* box-shadow: 0 0 10px 8px var(--blue) */
-}
-#work {
-    height: 950px;
-    /* box-shadow: 0 0 10px 8px var(--pink) */
-}
-#contact-me {
-    box-shadow: 0 0 10px 8px var(--green)
-}
-#resume {
-    box-shadow: 0 0 10px 8px var(--orange)
-}
-
 section h2 {
     padding: 10px;
     position: absolute;
-    /* left: 20px; */
-    color: var(--);
     background-color: var(--black);
     font-size: 50px;
     box-shadow: 0 0 10px 8px var(--light-blue);
 }
 
+#about-me {
+    height: 300px;
+    font-size: 25px;
+}
+#work {
+    height: 950px;
+}
+
+.card ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.card ul li {
+    display:inline-flex;
+    margin: 20px;
+    padding-top: 100px;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+/* section headers */
 #header-am {
     height: 300px;
     top: 200px;
-    left: 20px;
+    left: 58px;
     border-right: 6px solid var(--blue);
 
 }
 #header-work {
-    height: 750px;
-    left: 37px;
+    height: 850px;
+    left: 75px;
     border-right: 6px solid var(--pink);
 }
-/* #header-contact {
+#header-contact {
+    height: 250px;
+    left: 15px;
+    top: 1500px;
     border-right: 6px solid var(--green);
 }
-#header-resume {
-    border-right: 6px solid var(--orange);
-} */
+
+/* images */
 #me {
     position: relative;
     padding: 8px;
@@ -120,22 +123,12 @@ section h2 {
     float: right;
 }
 
-
-/* work section images */
 #ravebuddy-img {
     border: 4px solid var(--pink);
     display: flex;
     position: absolute;
     height: 400px;
     width: 65%;
-}
-#RaveBuddy {
-    display: flex;
-    position: absolute;
-    bottom: -65px;
-    padding: 7px;
-    background-color: var(--pink);
-    font-size: 60px;
 }
 #clothes-img {
     border: 4px solid var(--pink);
@@ -145,6 +138,16 @@ section h2 {
     height: 300px;
     width: 40%
 }
+
+/* image titles */
+#RaveBuddy {
+    display: flex;
+    position: absolute;
+    bottom: -65px;
+    padding: 7px;
+    background-color: var(--pink);
+    font-size: 60px;
+}
 #Clothes {
     position: absolute;
     bottom: -410px;
@@ -152,9 +155,6 @@ section h2 {
     background-color: var(--pink);
     font-size: 40px;
 }
-
-
-
 
 
 /* nav bar pseduo elements */
@@ -170,42 +170,11 @@ section h2 {
 .orange:hover {
     text-shadow: 5px 5px var(--orange);
 }
-/* section pseudo element */
-#about-me:hover {
-    box-shadow: 0 0 10px 8px var(--purple);
-}
-/* #work:hover {
-    box-shadow: 0 0 10px 8px var(--purple);
-} */
-#contact-me:hover {
-    box-shadow: 0 0 10px 8px var(--purple);
-}
-#resume:hover {
-    box-shadow: 0 0 10px 8px var(--purple);
-}
 
-.footer {
-    padding: 20px ;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--black);
-    color: var(--white);
-    border-top: 8px solid var(--purple);
-    text-align: center;
-}
-.footer h3 {
-    font-size: 35px;
-}
-.footer ul {
-    list-style-type: none;
-    display: inline-flex;
-}
 
-.footer ul li {
-    display:inline-flex;
-    margin: 20px;
-    padding-top: 30px;
-    font-size: 25px;
-}
 #github:hover {
     text-decoration: underline;
+}
+section img:hover {
+    box-shadow: 0 0 10px 8px var(--pink);
 }
